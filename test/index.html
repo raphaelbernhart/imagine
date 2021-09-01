@@ -5,10 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>hello</h1>
+    <div class="container">
+        <h1>Imagine <span class="heading-color">Lightbox</span></h1>
+        <p>A minimal vanilla JavaScript lightbox library with a gallery feature. </p>
 
-    <script src="/lightbox.js"></script>
+        <div class="section">
+            <h2>Single <span class="heading-color">picture</span></h2>
+            <div>
+                <div class="imagine" data-lightbox="lightbox-single-image" data-url="./images/image01.jpg">
+                    <img class="thumbnail" src="./images/image01-thumb.jpg" alt="">
+                </div>
+                <p>Das ist eine kleine Bildunterschrift</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Gallery <span class="heading-color">images</span></h2>
+            <div class="flex">
+                <div class="grid-column">
+                    <div class="imagine" data-lightbox="lightbox-gallery">
+                        <img src="images/image02-thumb.jpg" alt="">
+                    </div>
+                    <div class="imagine" data-lightbox="lightbox-gallery">
+                        <img src="images/image03-thumb.jpg" alt="">
+                    </div>
+                    <div class="imagine" data-lightbox="lightbox-gallery">
+                        <img src="images/image04-thumb.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="grid-column">
+                    <div class="imagine" data-lightbox="lightbox-gallery">
+                        <img src="images/image05-thumb.jpg" alt="">
+                    </div>
+                    <div class="imagine" data-lightbox="lightbox-gallery">
+                        <img src="images/image06-thumb.jpg" alt="">
+                    </div>
+                    <div class="imagine" data-lightbox="lightbox-gallery">
+                        <img src="images/image07-thumb.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="imagine-toggle" data-toggle="lightbox01" href=""></a>
+    </div>
+
+    <script src="/imagine.js"></script>
 </body>
 </html>

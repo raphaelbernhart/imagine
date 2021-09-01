@@ -1,3 +1,1 @@
-import test from './test';
-
-console.log(test.test);
+import './scss/main.scss';

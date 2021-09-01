@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
+
+body {
+    background-color: #ebe8dd;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1040px;
+    padding: 0 20px;
+}
+
+h1 {
+    color: rgb(40, 40, 40);
+    font-family: 'Playfair Display', serif;
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 1.2;
+    position: relative;
+}
+
+h2 {
+    color: rgb(40, 40, 40);
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: .9rem;
+    line-height: 2.2;
+}
+
+.heading-color {
+    color: #c69959;
+    position: relative;
+}
+
+.heading-color::after {
+    content: "";
+    background-color: #c69959;
+    bottom: -10px;
+    height: 6px;
+    left: 25px;
+    position: absolute;
+    width: 80px;
+}
+
+h1 .heading-color::after {
+    content: "";
+    background-color: #c69959;
+    bottom: -25px;
+    height: 10px;
+    left: 30px;
+    position: absolute;
+    width: 120px;
+}
+
+.thumbnail {
+    box-shadow: 0px 10px 25px rgba(24, 24, 24, .3);
+    max-width: 550px;
+    width: 100%;
+}
+
+.section {
+    margin-top: 100px;
+}
+
+.flex {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.flex .grid-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 0;
+    width: 50%;
+}
+
+.flex .grid-column:nth-child(odd) {
+    padding-right: 20px;
+}
+
+.flex .grid-column:nth-child(even) {
+    padding-left: 20px;
+}
+
+.flex .grid-column * {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.grid * {
+    width: 100%;
+}
