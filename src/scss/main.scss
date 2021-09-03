@@ -1,2 +1,10 @@
-@import './image.scss';
+@import './thumbnail.scss';
 @import './lightbox.scss';
+
+.imagine-d-none {
+    display: none;
+}
+
+.imagine-o-none {
+    opacity: 0;
+}

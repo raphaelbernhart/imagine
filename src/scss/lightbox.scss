@@ -1,0 +1,52 @@
+.imagine-lightbox {
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    transition: 2s;
+    top: 0;
+    width: 100vw;
+    z-index: 150;
+    img {
+        position: absolute;
+        transition: .5s;
+        z-index: 200;
+        &.open {
+            left: 50%!important;
+            top: 50%!important;
+            transition: .5s;
+        }
+    }
+    .imagine-lightbox-background {
+        background-color: black;
+        cursor: zoom-out;
+        height: 100vh;
+        opacity: 0;
+        width: 100vw;
+        transition: 1s opacity;
+        z-index: 150;
+        &.show {
+            opacity: .5;
+        }
+    }
+    .imagine-actions-wrapper {
+        height: 100vh;
+        left: 0;
+        padding: 40px;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: 160;
+        .imagine-actions {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            .imagine-image-actions {
+                right: 0;
+                position: absolute;
+                top: 0;
+            }
+            // .imagine-gallery-arrows {}
+        }
+    }
+}

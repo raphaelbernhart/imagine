@@ -1,0 +1,9 @@
+.imagine {
+    cursor: zoom-in;
+    display: inline-block;
+    z-index: 40;
+    img {
+        pointer-events: none;
+        width: 100%;
+    }
+}
