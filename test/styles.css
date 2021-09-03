@@ -102,3 +102,7 @@ h1 .heading-color::after {
 .grid * {
     width: 100%;
 }
+
+.img {
+    max-width: 100%;
+}

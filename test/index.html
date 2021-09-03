@@ -13,10 +13,10 @@
         <h1>Imagine <span class="heading-color">Lightbox</span></h1>
         <p>A minimal vanilla JavaScript lightbox library with a gallery feature. </p>
 
-        <div class="section">
+        <div class="section" style="position: relative;">
             <h2>Single <span class="heading-color">picture</span></h2>
             <div>
-                <div class="imagine" data-lightbox="lightbox-single-image" data-url="./images/image01.jpg">
+                <div class="imagine img" data-lightbox="lightbox-single-image" data-url="./images/image01.jpg">
                     <img class="thumbnail" src="./images/image01-thumb.jpg" alt="">
                 </div>
                 <p>Das ist eine kleine Bildunterschrift</p>
@@ -27,33 +27,46 @@
             <h2>Gallery <span class="heading-color">images</span></h2>
             <div class="flex">
                 <div class="grid-column">
-                    <div class="imagine" data-lightbox="lightbox-gallery">
+                    <div class="imagine" data-lightbox="lightbox-gallery" data-url="./images/image02.jpg">
                         <img src="images/image02-thumb.jpg" alt="">
                     </div>
-                    <div class="imagine" data-lightbox="lightbox-gallery">
+                    <div class="imagine" data-lightbox="lightbox-gallery" data-url="./images/image03.jpg">
                         <img src="images/image03-thumb.jpg" alt="">
                     </div>
-                    <div class="imagine" data-lightbox="lightbox-gallery">
+                    <div class="imagine" data-lightbox="lightbox-gallery" data-url="./images/image04.jpg">
                         <img src="images/image04-thumb.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="grid-column">
-                    <div class="imagine" data-lightbox="lightbox-gallery">
+                    <div class="imagine" data-lightbox="lightbox-gallery" data-url="./images/image05.jpg">
                         <img src="images/image05-thumb.jpg" alt="">
                     </div>
-                    <div class="imagine" data-lightbox="lightbox-gallery">
+                    <div class="imagine" data-lightbox="lightbox-gallery" data-url="./images/image06.jpg">
                         <img src="images/image06-thumb.jpg" alt="">
                     </div>
-                    <div class="imagine" data-lightbox="lightbox-gallery">
+                    <div class="imagine" data-lightbox="lightbox-gallery" data-url="./images/image07.jpg">
                         <img src="images/image07-thumb.jpg" alt="">
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="section" style="position: relative;">
+            <h2>Wide <span class="heading-color">picture</span></h2>
+            <div>
+                <div class="imagine img" data-lightbox="lightbox-single-image" data-url="./images/image09.jpg">
+                    <img class="thumbnail" src="./images/image09-thumb.jpg" alt="">
+                </div>
+                <p>Das ist eine kleine Bildunterschrift</p>
             </div>
         </div>
         <a class="imagine-toggle" data-toggle="lightbox01" href=""></a>
     </div>
 
     <script src="/imagine.js"></script>
+    <script>
+        initImagine({ actions: true });
+    </script>
 </body>
 </html>
