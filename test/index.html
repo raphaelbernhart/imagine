@@ -25,7 +25,7 @@
 
         <div class="section">
             <h2>Gallery <span class="heading-color">images</span></h2>
-            <div class="flex">
+            <!-- <div class="flex">
                 <div class="grid-column">
                     <div class="imagine" data-lightbox="lightbox-gallery" data-url="./images/image02.jpg">
                         <img src="images/image02-thumb.jpg" alt="">
@@ -49,6 +49,26 @@
                         <img src="images/image07-thumb.jpg" alt="">
                     </div>
                 </div>
+            </div> -->
+            <div class="image-grid">
+                <div class="imagine" data-lightbox="lightbox-gallery" data-url="./images/image02.jpg">
+                    <img src="images/image02-thumb.jpg" alt="">
+                </div>
+                <div class="imagine" data-lightbox="lightbox-gallery" data-url="./images/image03.jpg">
+                    <img src="images/image03-thumb.jpg" alt="">
+                </div>
+                <div class="imagine" data-lightbox="lightbox-gallery" data-url="./images/image04.jpg">
+                    <img src="images/image04-thumb.jpg" alt="">
+                </div>
+                <div class="imagine" data-lightbox="lightbox-gallery" data-url="./images/image05.jpg">
+                    <img src="images/image05-thumb.jpg" alt="">
+                </div>
+                <div class="imagine" data-lightbox="lightbox-gallery" data-url="./images/image06.jpg">
+                    <img src="images/image06-thumb.jpg" alt="">
+                </div>
+                <div class="imagine" data-lightbox="lightbox-gallery" data-url="./images/image07.jpg">
+                    <img src="images/image07-thumb.jpg" alt="">
+                </div>
             </div>
         </div>
 
@@ -67,6 +87,19 @@
     <script src="/imagine.js"></script>
     <script>
         initImagine({ actions: true });
+    </script>
+    <!-- Grid System -->
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+    <script>
+        let magicGrid = new MagicGrid({
+            container: '.image-grid',
+            static: true,
+            animate: true,
+            gutter: 40,
+            center: true,
+        });
+
+        magicGrid.listen();
     </script>
 </body>
 </html>

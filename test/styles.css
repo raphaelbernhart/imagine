@@ -106,3 +106,7 @@ h1 .heading-color::after {
 .img {
     max-width: 100%;
 }
+
+.imagine {
+    width: 40%;
+}
