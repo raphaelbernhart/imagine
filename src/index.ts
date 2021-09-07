@@ -1,6 +1,6 @@
 import './scss/main.scss';
 import { Options } from './types/index';
-import { enableScroll, disableScroll } from './helpers';
+import { enableScroll, disableScroll } from './helpers/toggleScroll';
 
 const imagineInstances: Array<HTMLElement> = [];
 let _options: Options = {};
